@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Guidance</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Career Guidance Web App</h1>
+        <form id="careerForm">
+            <div class="section">
+                <label for="interests">Select your Interests:</label>
+                <ul id="interests" class="checkbox-list">
+                    <li><input type="checkbox" id="tech" name="interests" value="technology"><label for="tech">Technology</label></li>
+                    <li><input type="checkbox" id="design" name="interests" value="design"><label for="design">Design</label></li>
+                    <li><input type="checkbox" id="numbers" name="interests" value="numbers"><label for="numbers">Numbers</label></li>
+                    <li><input type="checkbox" id="health" name="interests" value="health"><label for="health">Health</label></li>
+                    <li><input type="checkbox" id="education" name="interests" value="education"><label for="education">Education</label></li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <label for="skills">Select your Skills:</label>
+                <ul id="skills" class="checkbox-list">
+                    <li><input type="checkbox" id="programming" name="skills" value="programming"><label for="programming">Programming</label></li>
+                    <li><input type="checkbox" id="creativity" name="skills" value="creativity"><label for="creativity">Creativity</label></li>
+                    <li><input type="checkbox" id="analytical" name="skills" value="analytical"><label for="analytical">Analytical</label></li>
+                    <li><input type="checkbox" id="communication" name="skills" value="communication"><label for="communication">Communication</label></li>
+                    <li><input type="checkbox" id="management" name="skills" value="management"><label for="management">Management</label></li>
+                </ul>
+            </div>
+
+            <div class="button-group">
+                <button type="submit"><i class="fas fa-search"></i> Get Recommendations</button>
+                <button type="button" id="clearButton"><i class="fas fa-eraser"></i> Clear</button>
+            </div>
+        </form>
+        <div id="recommendations"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
